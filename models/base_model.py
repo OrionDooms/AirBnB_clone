@@ -23,6 +23,8 @@ class BaseModel():
             if key != '__class__':
                 setattr(self, key, value)
 
+        models.storage.new(self)
+
     def __str__(self):
         """
         print out the class name, self.id, self.__dict__ .
@@ -35,6 +37,7 @@ class BaseModel():
         Updates the public instance attribute with the current datetime.
         """
         self.updated_at = datetime.now()
+        models.storage.save()
 
     def to_dict(self):
         """
