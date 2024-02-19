@@ -5,8 +5,7 @@
   border: solid 1px #DDDDDD;
   border-radius: 4px;
   display: flex;
-  justify-content: right;
-  align-items: center;
+  /*align-items: center;*/
 }
 button{
   font-size: 18px;
@@ -24,18 +23,14 @@ button:hover{
 }
 
 .locations{
-  
-height: 100%;
-width: 25%;
-border: solid 1px;
-}
-.amenities{
   height: 100%;
-width: 25%;
-border: solid 1px;
+  width: 25%;  
 }
-/*height: 100%,width: 25% 
-border right #DDDDDD 1px only for the first left filter*/
+.locations{
+  height: 100%;
+  width: 25%;
+  border-right: solid 1px #DDDDDD;
+}
 h3{
   text-align: center;
   font-weight: 600;
